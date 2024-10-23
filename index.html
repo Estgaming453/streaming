@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Ma plateforme </div>
+        <nav>
+            <a href="#">court-métrages</a>
+            <a href="#">Films</a>
+            <a href="#">Ma Liste</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="/modifié.png" alt="Hero image">
+            <div class="hero-content">
+                <h1> Titre du film </h1>
+                <p> Description du film</p>
+                <button id="play-button">regarder</button>
+
+            </div>
+        </section>
+        <section class="carousel">
+            <h2> Populaire sur ma platforme</h2>
+            <div class="carousel-container">
+                <section class="video-player" id="video-player">
+                    <video controls>
+                        <source src="/bande annonce  fr banned.mp4" type="video/mp4">
+
+
+                        Votre navigateur ne supporte pas le format vidéo.
+                    </video>
+
+
+                    <button id="close-video">Fermer</button>
+                </section>
+
+
+    </main>
+    <script>
+        
+
+document.getElementById("play-button").addEventListener("click", function(){
+    document.getElementById("video-player").style.display = "flex";
+})
+document.getElementById("close-video").addEventListener("click", function(){
+    document.getElementById("video-player").style.display = "none";
+})
+
+    </script>
+
+</body>
+
+</html>
